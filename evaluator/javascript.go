@@ -30,7 +30,7 @@ func (p *JavascriptEvaluator) Execute(code string) (stdOut string, err error) {
 	var stdout bytes.Buffer
 	var stderr bytes.Buffer
 
-	cmd := exec.Command("bash", "-c", "node index.js")
+	cmd := exec.Command("sh", "-c", "/root/.nvm/versions/node/v20.15.0/bin/node index.js")
 
 	cmd.Stdout = &stdout
 	cmd.Stderr = &stderr
