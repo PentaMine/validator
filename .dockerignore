@@ -1,0 +1,6 @@
+.idea
+docker-compose.yml
+start.bat
+start.sh
+validator.iml
+Dockerfile

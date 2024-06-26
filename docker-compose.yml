@@ -1,0 +1,13 @@
+services:
+  validator:
+
+    build: .
+    container_name: "validator"
+    ports:
+      - "6969:6969"
+    volumes:
+      - test_data:/usr/src/app/test
+
+volumes:
+  test_data:
+    external: false
